@@ -10,7 +10,22 @@ Briefing für den Coding-Agenten. Lies diese Datei zu Beginn jeder Session, dana
 
 - Framework: <z. B. Next.js>
 - Datenbank: SQLite über Prisma 7 (lokale Datei, kein Server). Installieren mit `npm install prisma@7 @prisma/client@7`, keine Vorabversion.
+- UI: Tailwind CSS, Gestaltung siehe Abschnitt „Design“
 - Start: `npm run dev`, danach http://localhost:3000
+
+## Design
+
+Die App soll aussehen wie ein gutes Produkt, nicht wie ein Tailwind-Beispiel.
+
+- Leg beim ersten Feature eine Richtung fest (z. B. ruhig und editorial, freundlich und farbig oder technisch und präzise), schreib sie in `docs/decisions.md` und halte sie überall durch.
+- Farben: eine getönte Grundfläche statt reinem Weiß und Grau (z. B. warmes Off-White oder Stein), eine kräftige Akzentfarbe für Hauptaktionen und den aktiven Menüpunkt, sonst sparsam. Kein Standard-Indigo, keine Lila-Blau-Verläufe.
+- Schrift: eine Schrift mit Charakter (über `next/font` oder Google Fonts), gern eine eigene für Überschriften. Nicht nur die Systemschrift.
+- Hierarchie über Größe, Gewicht und Abstand: Seitentitel deutlich größer, Labels klein und gedämpft, Zahlen und Datumswerte mit `tabular-nums`.
+- Großzügige Abstände, zusammengehörige Inhalte auf Karten oder Flächen, einheitliche Radien und Schatten.
+- Tabellen: angenehme Zeilenhöhe, dezente Trennlinien und Hover, Status als farbige Badges, Zahlen und Aktionen rechtsbündig.
+- Formulare: Labels über den Feldern, sichtbarer Fokus, Pflichtfelder markiert, Fehlermeldungen direkt am Feld.
+- Leere Listen, Ladezustände und Fehler bekommen eine eigene, freundliche Darstellung.
+- Icons aus einer Bibliothek (z. B. lucide), einheitlich. Keine Emojis als Icons.
 
 ## Arbeitsweise
 
